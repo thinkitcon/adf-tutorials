@@ -1,0 +1,9 @@
+{
+	"name": "tic-dev-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1cee898f-6574-445f-977d-c089f9a84e99",
+		"tenantId": "ccce4794-bdfa-401f-b05d-e1fe02355258"
+	}
+}
