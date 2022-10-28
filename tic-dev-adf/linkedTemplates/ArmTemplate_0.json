@@ -37,7 +37,14 @@
 					{
 						"name": "Append variable1",
 						"type": "AppendVariable",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "Wait1",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"userProperties": [],
 						"typeProperties": {
 							"variableName": "today",
@@ -45,6 +52,15 @@
 								"value": "@utcnow()",
 								"type": "Expression"
 							}
+						}
+					},
+					{
+						"name": "Wait1",
+						"type": "Wait",
+						"dependsOn": [],
+						"userProperties": [],
+						"typeProperties": {
+							"waitTimeInSeconds": 1
 						}
 					}
 				],
